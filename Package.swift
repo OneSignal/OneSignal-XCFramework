@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "OneSignal",
-            type: .dynamic,
+            type: .static,
             targets: ["OneSignal"]),
     ],
     targets: [
