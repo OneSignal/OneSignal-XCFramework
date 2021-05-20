@@ -8,12 +8,13 @@ let package = Package(
     products: [
         .library(
             name: "OneSignal",
+            tpye: .static,
             targets: ["OneSignal"]),
     ],
     targets: [
         .binaryTarget(
-          name: "OneSignal",
           url: "https://github.com/OneSignal/OneSignal-XCFramework/releases/download/test/OneSignal.xcframework.zip",
+          checksum: "3f229fbcd336a908383da2c265e6d797aa0cf9c5a09c67aa246a42b224e05106"
           checksum: "3f229fbcd336a908383da2c265e6d797aa0cf9c5a09c67aa246a42b224e05106"
         )
     ]
