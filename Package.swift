@@ -5,5 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "OneSignalXCFramework",
-    path: "OneSignal.xcframework"
+    products: [
+        .library(
+            name: "OneSignal",
+            targets: ["OneSignal"]),
+    ],
+    targets: [
+        .binaryTarget(name: "OneSignal", path: "OneSignal.xcframework")
+    ]
 )
