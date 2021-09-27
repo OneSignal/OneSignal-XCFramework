@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "OneSignalFinal",
+    name: "OneSignalFinalLib",
     products: [
         .library(
-            name: "OneSignalFinal",
-            targets: ["OneSignalFinal"]),
+            name: "OneSignalFinalLib",
+            targets: ["OneSignalFinalLib"]),
     ],
     targets: [
         .binaryTarget(
@@ -19,7 +19,7 @@ let package = Package(
           name: "OneSignalSwift",
           path: "OneSignalSwift.xcframework"
         ),
-        .target(name: "OneSignalFinal",
+        .target(name: "OneSignalFinalLib",
                 dependencies: [
                     .target(name: "OneSignalShared"),
                     .target(name: "OneSignalSwift")
