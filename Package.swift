@@ -12,17 +12,17 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-          name: "OneSignalShared",
+          name: "OneSignalSharedTest",
           path: "OneSignal.xcframework"
         ),
         .binaryTarget(
-          name: "OneSignalSwift",
+          name: "OneSignalSwiftTest",
           path: "OneSignalSwift.xcframework"
         ),
         .target(name: "OneSignalFinalLib",
                 dependencies: [
-                    .target(name: "OneSignalShared"),
-                    .target(name: "OneSignalSwift")
+                    .target(name: "OneSignalSharedTest"),
+                    .target(name: "OneSignalSwiftTest")
                 ],
                 path: "OneSignalFinal"
         )
