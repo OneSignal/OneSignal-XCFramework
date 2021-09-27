@@ -4,25 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/OneSignalCore.framework/Info.plist</key>
-		<data>
-		m6ylwhiU+vH+JkcXr2eZhhNHULU=
-		</data>
-		<key>Frameworks/OneSignalCore.framework/OneSignalCore</key>
-		<data>
-		rllB7uDdizJjePAsSFNV3DMBRtE=
-		</data>
-		<key>Frameworks/OneSignalCore.framework/_CodeSignature/CodeResources</key>
-		<data>
-		7Pr8sjXG94YjCSChRzSmI3VVfU8=
-		</data>
 		<key>Frameworks/OneSignalSwift.framework/Info.plist</key>
 		<data>
 		BXIU+FZUd8W8rpoFmKbMr9umttQ=
 		</data>
 		<key>Frameworks/OneSignalSwift.framework/OneSignalSwift</key>
 		<data>
-		t7cepNJP50fRr4cnpLuE5nMDTQ0=
+		Y51tTp2IV/T2vKbfqTbOQ5ncPeI=
 		</data>
 		<key>Frameworks/OneSignalSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -43,39 +31,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/OneSignalCore.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m6ylwhiU+vH+JkcXr2eZhhNHULU=
-			</data>
-			<key>hash2</key>
-			<data>
-			C5Z3SHQYImiFACnfTgca2xMAeR061G1HAOVMX1za9nU=
-			</data>
-		</dict>
-		<key>Frameworks/OneSignalCore.framework/OneSignalCore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rllB7uDdizJjePAsSFNV3DMBRtE=
-			</data>
-			<key>hash2</key>
-			<data>
-			ef6F+loJYdRkkZYJHz8MkH4g9mghYlvdUi1fNDv02Rg=
-			</data>
-		</dict>
-		<key>Frameworks/OneSignalCore.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7Pr8sjXG94YjCSChRzSmI3VVfU8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Zj1KSYgxmb1wsZU3F8fq5VwVgSJkDdPfHF9Wf9bToVs=
-			</data>
-		</dict>
 		<key>Frameworks/OneSignalSwift.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -91,11 +46,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t7cepNJP50fRr4cnpLuE5nMDTQ0=
+			Y51tTp2IV/T2vKbfqTbOQ5ncPeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OD7ZKmqam5JqKIf+6jXl+h2XxQX0jINnlt2zAhFTyfU=
+			r9T3aBlpKdTNMyt6jJL8kqLmxmaCUQPt6DjIknpHag4=
 			</data>
 		</dict>
 		<key>Frameworks/OneSignalSwift.framework/_CodeSignature/CodeResources</key>

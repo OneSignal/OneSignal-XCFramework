@@ -16,57 +16,85 @@
 		<data>
 		N3ynLQtZj8msGiAv1GthyItezEU=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/arm.swiftinterface</key>
+		<data>
+		guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/arm.swiftmodule</key>
 		<data>
-		fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+		CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
 		HwAyayQ+TfYYwdFznOMSByAwOr4=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		r6vIiY4rU1Qf4hIfB14kV6WxRn4=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+OJQpNj4SFQgQHMc5DCPNCcn7Mw=
+		VB0fMa+k3ArAMNflW0/7n3dwCk0=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftdoc</key>
 		<data>
 		HwAyayQ+TfYYwdFznOMSByAwOr4=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		r6vIiY4rU1Qf4hIfB14kV6WxRn4=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+OJQpNj4SFQgQHMc5DCPNCcn7Mw=
+		VB0fMa+k3ArAMNflW0/7n3dwCk0=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
 		N3ynLQtZj8msGiAv1GthyItezEU=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<data>
+		guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+		CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftdoc</key>
 		<data>
 		N3ynLQtZj8msGiAv1GthyItezEU=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftinterface</key>
+		<data>
+		guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+		CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftdoc</key>
 		<data>
 		WivG3Gt2AMPVK18g+WKSHp0em9A=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftinterface</key>
+		<data>
+		zonUYFS9N3UkKPWiBYLzdXyKpQc=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftmodule</key>
 		<data>
-		z+x7uz11I9PVelzeTLpgMq0xtiE=
+		jT0NfuHyJQTod2J91keLKmEsX8E=
 		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftdoc</key>
 		<data>
 		WivG3Gt2AMPVK18g+WKSHp0em9A=
 		</data>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftinterface</key>
+		<data>
+		zonUYFS9N3UkKPWiBYLzdXyKpQc=
+		</data>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftmodule</key>
 		<data>
-		z+x7uz11I9PVelzeTLpgMq0xtiE=
+		jT0NfuHyJQTod2J91keLKmEsX8E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,15 +125,26 @@
 			QKPtANa19Xuk4QxQgsconY+Yr/2JIIoGQnrh3SmSFzU=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/arm.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RwK7MJBzbR+1TVxf0fXZz2gOK9oju7I/cg80NjK0d7k=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+			CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2K1coX96EPJb6+N6QUuRthqxVAI0MOFtuMPgkv9Tl50=
+			qqifD/27wci1LQhRDkJilz30XTefWGOUJ9qL5U8qyPA=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -119,15 +158,26 @@
 			BVHoRkCZBZ18/Iy01qgxpBFHok/gsiM087q51KNz/yg=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r6vIiY4rU1Qf4hIfB14kV6WxRn4=
+			</data>
+			<key>hash2</key>
+			<data>
+			kbiYQmwMZ2wC3wElICsPTIX3lVep4yxesZw1HfPYJjs=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+OJQpNj4SFQgQHMc5DCPNCcn7Mw=
+			VB0fMa+k3ArAMNflW0/7n3dwCk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			c6DneiZgSNBQo0AzwpDRlI+BSHqk5KcIuD9K4pz275M=
+			xtWKKCkkM/fkCO2EaTzcSTzYLKQgmf6ijF+j/ixyeeo=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftdoc</key>
@@ -141,15 +191,26 @@
 			BVHoRkCZBZ18/Iy01qgxpBFHok/gsiM087q51KNz/yg=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r6vIiY4rU1Qf4hIfB14kV6WxRn4=
+			</data>
+			<key>hash2</key>
+			<data>
+			kbiYQmwMZ2wC3wElICsPTIX3lVep4yxesZw1HfPYJjs=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+OJQpNj4SFQgQHMc5DCPNCcn7Mw=
+			VB0fMa+k3ArAMNflW0/7n3dwCk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			c6DneiZgSNBQo0AzwpDRlI+BSHqk5KcIuD9K4pz275M=
+			xtWKKCkkM/fkCO2EaTzcSTzYLKQgmf6ijF+j/ixyeeo=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -163,15 +224,26 @@
 			QKPtANa19Xuk4QxQgsconY+Yr/2JIIoGQnrh3SmSFzU=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RwK7MJBzbR+1TVxf0fXZz2gOK9oju7I/cg80NjK0d7k=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+			CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2K1coX96EPJb6+N6QUuRthqxVAI0MOFtuMPgkv9Tl50=
+			qqifD/27wci1LQhRDkJilz30XTefWGOUJ9qL5U8qyPA=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftdoc</key>
@@ -185,15 +257,26 @@
 			QKPtANa19Xuk4QxQgsconY+Yr/2JIIoGQnrh3SmSFzU=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			guMnJvDP2NeaQlkj06XZd/SA4ZQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RwK7MJBzbR+1TVxf0fXZz2gOK9oju7I/cg80NjK0d7k=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fsBQc6eB92aX+vmQ4oxOXV/C4Ng=
+			CICrpPkhaG9s0Sl3q9lDYK2W0Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2K1coX96EPJb6+N6QUuRthqxVAI0MOFtuMPgkv9Tl50=
+			qqifD/27wci1LQhRDkJilz30XTefWGOUJ9qL5U8qyPA=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftdoc</key>
@@ -207,15 +290,26 @@
 			c15/B/pk+J+FRXf7s1ARzoA29kFwTnUHCckk8ujJIRo=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zonUYFS9N3UkKPWiBYLzdXyKpQc=
+			</data>
+			<key>hash2</key>
+			<data>
+			HMEUq6SraMcB3KqK3bvhx7Mb8OA0RmBo9TPkraRRH/Q=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z+x7uz11I9PVelzeTLpgMq0xtiE=
+			jT0NfuHyJQTod2J91keLKmEsX8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNlQX0Rfp/zAZYr9qiY+BQaYbakGDZC1y3MYXApEstw=
+			kL2jpPX+M+wzaMhKM+MlWwaerGaz/LRjHHgGgNdflwY=
 			</data>
 		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftdoc</key>
@@ -229,15 +323,26 @@
 			c15/B/pk+J+FRXf7s1ARzoA29kFwTnUHCckk8ujJIRo=
 			</data>
 		</dict>
+		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zonUYFS9N3UkKPWiBYLzdXyKpQc=
+			</data>
+			<key>hash2</key>
+			<data>
+			HMEUq6SraMcB3KqK3bvhx7Mb8OA0RmBo9TPkraRRH/Q=
+			</data>
+		</dict>
 		<key>Modules/OneSignalSwift.swiftmodule/armv7s.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z+x7uz11I9PVelzeTLpgMq0xtiE=
+			jT0NfuHyJQTod2J91keLKmEsX8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNlQX0Rfp/zAZYr9qiY+BQaYbakGDZC1y3MYXApEstw=
+			kL2jpPX+M+wzaMhKM+MlWwaerGaz/LRjHHgGgNdflwY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
