@@ -4,17 +4,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "OneSignalXCFramework",
+    name: "OneSignalFinal",
     products: [
         .library(
-            name: "OneSignal",
-            targets: ["OneSignal"]),
+            name: "OneSignalFinal",
+            targets: ["OneSignalFinal"]),
     ],
     targets: [
         .binaryTarget(
-          name: "OneSignal",
-          url: "https://github.com/OneSignal/OneSignal-iOS-SDK/releases/download/3.8.1/OneSignal.xcframework.zip",
-          checksum: "8fe90db8914c3459db1c65de6fef6e8c87a4cebe463163d29e35690b2063e4f2"
+          name: "OneSignalShared",
+          path: "OneSignal.xcframework"
+        ),
+        .binaryTarget(
+          name: "OneSignalSwift",
+          path: "OneSignalSwift.xcframework"
+        ),
+        .target(name: "OneSignalFinal",
+                dependencies: [
+                    .target(name: "OneSignalShared"),
+                    .target(name: "OneSignalSwift")
+                ],
+                path: "OneSignalFinal"
         )
     ]
 )

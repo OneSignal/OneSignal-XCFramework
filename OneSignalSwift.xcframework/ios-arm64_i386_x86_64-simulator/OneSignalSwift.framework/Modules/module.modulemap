@@ -1,0 +1,4 @@
+framework module OneSignalSwift {
+  header "OneSignalSwift-Swift.h"
+  requires objc
+}

@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OneSignalSwift
+import Foundation
+import Swift
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class OneSignalSwift : ObjectiveC.NSObject {
+  @objc public class func swiftTest()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OneSignalSwiftTest : ObjectiveC.NSObject {
+  @objc public class func testingSwift()
+  @objc public func instanceTest()
+  public func swiftOnlyTest()
+  @objc override dynamic public init()
+  @objc deinit
+}
