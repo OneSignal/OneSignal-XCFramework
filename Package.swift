@@ -4,57 +4,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "OneSignal",
+    name: "OneSignalFinalLib",
     products: [
         .library(
-            name: "OneSignal",
-            targets: ["OneSignalWrapper"]),
-        .library(
-            name: "OneSignalExtension",
-            targets: ["OneSignalExtensionWrapper"]),
-            .library(
-            name: "OneSignalLocation",
-            targets: ["OneSignalLocationWrapper"]),
+            name: "OneSignalFinalLib",
+            targets: ["OneSignalFinalLib"]),
     ],
     targets: [
         .binaryTarget(
-          name: "OneSignal",
+          name: "OneSignalSharedTest",
           path: "OneSignal.xcframework"
         ),
         .binaryTarget(
-          name: "OneSignalCore",
-          path: "OneSignalCore.xcframework"
+          name: "OneSignalSwiftTest",
+          path: "OneSignalSwift.xcframework"
         ),
-        .binaryTarget(
-          name: "OneSignalLocation",
-          path: "OneSignalLocation.xcframework"
-        ),
-        .binaryTarget(
-          name: "OneSignalExtension",
-          path: "OneSignalExtension.xcframework"
-        ),
-        .target(name: "OneSignalWrapper",
+        .target(name: "OneSignalFinalLib",
                 dependencies: [
-                    .target(name: "OneSignal"),
-                    .target(name: "OneSignalCore")
-                    .target(name: "OneSignalExtension")
+                    .target(name: "OneSignalSharedTest"),
+                    .target(name: "OneSignalSwiftTest")
                 ],
-                path: "OneSignalWrapper"
-        )
-        .target(name: "OneSignalExtensionWrapper",
-                dependencies: [
-                    .target(name: "OneSignalCore")
-                    .target(name: "OneSignalExtension")
-                ],
-                path: "OneSignalExtensionWrapper"
-        )
-        .target(name: "OneSignalLocationWrapper",
-                dependencies: [
-                    .target(name: "OneSignalCore")
-                    .target(name: "OneSignalLocation")
-                ],
-                path: "OneSignalLocationWrapper"
+                path: "OneSignalFinal"
         )
     ]
 )
-
