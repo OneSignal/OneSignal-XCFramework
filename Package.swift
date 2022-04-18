@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
           name: "OneSignal",
-          url: "https://github.com/OneSignal/OneSignal-iOS-SDK/releases/download/3.10.2/OneSignal.xcframework.zip",
-          checksum: "b17aca2cb03bac87be5a219903eedda2ce3430c99949ce340fc00450b37c0a67"
+          url: "https://github.com/OneSignal/OneSignal-iOS-SDK/releases/download/3.10.3/OneSignal.xcframework.zip",
+          checksum: "1db61d448584500ce9f771ba84a394f6617c88a1a9455bd48bfd79f23d7f88a9"
         )
     ]
 )
