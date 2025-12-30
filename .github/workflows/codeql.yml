@@ -18,7 +18,6 @@ jobs:
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     permissions:
       security-events: write
-
       packages: read
 
     strategy:
@@ -38,8 +37,10 @@ jobs:
         uses: actions/cache@v5
         with:
           path: |
-            ~/.swiftpm/cache
+            ~/.swiftpm
             ~/Library/Caches/org.swift.swiftpm
+            ~/Library/Developer/Xcode/DerivedData
+            .build
           key: ${{ runner.os }}-spm-binaries-${{ hashFiles('Package.swift') }}
           restore-keys: |
             ${{ runner.os }}-spm-binaries-
@@ -64,7 +65,7 @@ jobs:
         timeout-minutes: 20
         run: |
           test -d OneSignalLiveActivitiesWrapper && test -f OneSignalLiveActivitiesWrapper/dummy.m && test -f OneSignalLiveActivitiesWrapper/include/dummy.h || (echo "ERROR: Directory structure invalid!" && exit 1)
-          swift build --arch arm64 --configuration release
+          swift build --arch arm64 --target OneSignalOutcomesWrapper
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
