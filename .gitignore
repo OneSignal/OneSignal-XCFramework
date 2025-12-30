@@ -7,3 +7,6 @@
 .swiftpm/xcode/xcuserdata
 xcuserdata
 .swiftpm/xcode/package.xcworkspace/xcuserdata
+.build
+dummy.m
+dummy.h

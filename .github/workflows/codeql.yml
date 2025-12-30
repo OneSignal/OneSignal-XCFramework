@@ -1,0 +1,77 @@
+name: "CodeQL"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron: "36 1 * * 0"
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    permissions:
+      security-events: write
+      packages: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: actions
+            build-mode: none
+          - language: swift
+            build-mode: manual
+            # Only include Swift analysis on scheduled runs
+            run-swift: ${{ github.event_name == 'schedule' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Cache Swift Package Manager binaries
+        if: matrix.language == 'swift' && matrix.run-swift == true
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+            ~/Library/Developer/Xcode/DerivedData
+            .build
+          key: ${{ runner.os }}-spm-binaries-${{ hashFiles('Package.swift') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-binaries-
+
+      - name: Create missing wrapper directory
+        if: matrix.language == 'swift' && matrix.run-swift == true
+        run: |
+          if [ ! -d "OneSignalLiveActivitiesWrapper" ]; then
+            mkdir -p OneSignalLiveActivitiesWrapper/include
+            echo "" > OneSignalLiveActivitiesWrapper/dummy.m
+            echo "" > OneSignalLiveActivitiesWrapper/include/dummy.h
+          fi
+
+      - name: Initialize CodeQL
+        if: matrix.language != 'swift' || matrix.run-swift == true
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+
+      - name: Build Swift Package
+        if: matrix.language == 'swift' && matrix.run-swift == true
+        timeout-minutes: 20
+        run: |
+          test -d OneSignalLiveActivitiesWrapper && test -f OneSignalLiveActivitiesWrapper/dummy.m && test -f OneSignalLiveActivitiesWrapper/include/dummy.h || (echo "ERROR: Directory structure invalid!" && exit 1)
+          swift build --arch arm64 --target OneSignalOutcomesWrapper
+
+      - name: Perform CodeQL Analysis
+        if: matrix.language != 'swift' || matrix.run-swift == true
+        uses: github/codeql-action/analyze@v4
+        with:
+          category: "/language:${{matrix.language}}"
