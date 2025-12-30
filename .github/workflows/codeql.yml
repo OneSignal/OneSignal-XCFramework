@@ -33,6 +33,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Cache Swift Package Manager binaries
+        if: matrix.language == 'swift'
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/.swiftpm/cache
+            ~/Library/Caches/org.swift.swiftpm
+          key: ${{ runner.os }}-spm-binaries-${{ hashFiles('Package.swift') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-binaries-
+
       - name: Create missing wrapper directory
         if: matrix.language == 'swift'
         run: |
@@ -40,17 +51,7 @@ jobs:
             mkdir -p OneSignalLiveActivitiesWrapper/include
             echo "" > OneSignalLiveActivitiesWrapper/dummy.m
             echo "" > OneSignalLiveActivitiesWrapper/include/dummy.h
-            echo "Created OneSignalLiveActivitiesWrapper directory"
-          else
-            echo "OneSignalLiveActivitiesWrapper directory already exists"
           fi
-          ls -la OneSignalLiveActivitiesWrapper/ || true
-          ls -la OneSignalLiveActivitiesWrapper/include/ || true
-
-      - name: Verify package structure
-        if: matrix.language == 'swift'
-        run: |
-          swift package resolve || swift package describe --type json || true
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
@@ -62,10 +63,8 @@ jobs:
         if: matrix.language == 'swift'
         timeout-minutes: 20
         run: |
-          pwd
-          ls -la OneSignalLiveActivitiesWrapper/ || echo "ERROR: Directory not found!"
           test -d OneSignalLiveActivitiesWrapper && test -f OneSignalLiveActivitiesWrapper/dummy.m && test -f OneSignalLiveActivitiesWrapper/include/dummy.h || (echo "ERROR: Directory structure invalid!" && exit 1)
-          swift build --arch arm64
+          swift build --arch arm64 --configuration release
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
